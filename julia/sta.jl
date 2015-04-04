@@ -1,17 +1,15 @@
-println("Importing STA...")
-
 # sta gives the Spike Triggered Average (average neuron activity preceding a spike)
 # stim is the recording of voltage over time in the neuron
-# rho is a matching time series which records the neuron's spikes
+# ρ is a matching time series which records the neuron's spikes
 # num_timesteps gives the desired time period to record prior to the spike (preset length)
-function sta(stim, rho, num_timesteps)
+function sta(stim, ρ, num_timesteps)
 
 	# sta_val will store the Spike Triggered Average of the desired preset length
     sta_val = zeros(num_timesteps)
 
-    # Get the indices at the start of each of the presets (rho records spikes as non-zero values)
+    # Get the indices at the start of each of the presets (ρ records spikes as non-zero values)
     # ignore spikes before num_timesteps as there is not enough data to include those in the average
-    start_times = find(rho[num_timesteps:end])
+    start_times = find(ρ[num_timesteps:end])
 
     # The number of presets
     num_presets = length(start_times)
