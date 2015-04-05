@@ -37,11 +37,10 @@ C) iJulia
 
  d) Do not use Enthought Canopy/EPD
 
-2) Update ipython
+2) Update ipython (from command line)
 
- a) conda update conda
-
- b) conda update ipython ipython-notebook ipython-qtconsole
+    conda update conda
+    conda update ipython ipython-notebook ipython-qtconsole
 
 3) Run julia REPL and add pkgs for iJulia:
 
