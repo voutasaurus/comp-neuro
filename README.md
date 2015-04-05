@@ -30,10 +30,10 @@ C) iJulia
 
  b) Run installer. 
 
- c) Tick boxes for: 
+ c) Set tick boxes for: 
 
- Adding Anaconda to System path
- Registering Anaconda as default Python version  
+*Adding Anaconda to System path 
+*Registering Anaconda as default Python version  
 
  d) Do not use Enthought Canopy/EPD
 
