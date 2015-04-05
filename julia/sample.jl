@@ -1,8 +1,9 @@
 # sample
 
-stim = ones(1000)
-ρ = zeros(1000)
-ρ[300]=1
-ρ[500]=1
-ρ[800]=1
+using MAT
+
+vars = matread("c1p8.mat")
+
+stim = vars["stim"]
+ρ = vars["rho"]
 
