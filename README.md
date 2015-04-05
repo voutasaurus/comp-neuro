@@ -7,34 +7,45 @@ A) Julia
 
 B) MATLAB file support
 1) Run julia REPL and add packages for reading matlab data files
-	Pkg.add("HDF5")
-	Pkg.add("MAT")
+
+ Pkg.add("HDF5")
+ Pkg.add("MAT")
 
 2) In Julia code:
-	using MAT
-	vars = matread("filename.mat")
-	# vars is now a dictionary of the variables defined in filename.mat
+
+ using MAT
+ vars = matread("filename.mat")
+ # vars is now a dictionary of the variables defined in filename.mat
 
 For more MAT functions and documentation see
 https://github.com/simonster/MAT.jl
 
 C) iJulia
 1) Download and install Anaconda
-	a) http://continuum.io/downloads#py34
-	b) Run installer. 
-	c) Tick boxes for: 
-		Adding Anaconda to System path
-		Registering Anaconda as default Python version  
-	d) Do not use Enthought Canopy/EPD
+
+ a) http://continuum.io/downloads#py34
+
+ b) Run installer. 
+
+ c) Tick boxes for: 
+
+ Adding Anaconda to System path
+ Registering Anaconda as default Python version  
+
+ d) Do not use Enthought Canopy/EPD
 
 2) Update ipython
-	a) conda update conda
-	b) conda update ipython ipython-notebook ipython-qtconsole
+
+ a) conda update conda
+
+ b) conda update ipython ipython-notebook ipython-qtconsole
 
 3) Run julia REPL and add pkgs for iJulia:
-	Pkg.add("IJulia")
-	Pkg.add("PyPlot")
+
+ Pkg.add("IJulia")
+ Pkg.add("PyPlot")
 
 4) Run julia REPL and start an iJulia notebook
-	using IJulia
-	notebook()
+
+ using IJulia
+ notebook()
