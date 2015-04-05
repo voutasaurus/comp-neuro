@@ -4,7 +4,7 @@ Computational Neuroscience
 
 A) Julia
 
-1) Install Julia
+1) Install Julia (http://julialang.org/downloads/)
 
 B) MATLAB file support
 
